@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using bank_accounts.Models
+@model bank_accounts.Models.User
+<h1>Welcome, @Model.FirstName @Model.LastName</h1>
+@if (ViewBag.Error == null)
+{
+    @TempData["error"]
+}
+<h3>Current Balance: $@Model.Balance</h3>
+<form action="MakeTransaction" controller="Bank" method="post">
+    <label>Deposit/Withdraw</label>
+    <input type="number" name="transaction_amount">
+    <input type="submit" value="Submit">
+</form>
+<table class="table-condensed">
+    <tr>
+        <td>Amount</td>
+        <td>Date</td>
+    </tr>
+    @foreach(var trans in @Model.Transactions)
+    {
+        <tr>
+            <td>@trans.Amount</td>
+            <td>@trans.CreatedAt.ToString("MMM dd yyyy")</td>
+        </tr>
+    }
+</table>

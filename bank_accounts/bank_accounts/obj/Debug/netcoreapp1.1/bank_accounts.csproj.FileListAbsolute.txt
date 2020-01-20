@@ -1,0 +1,11 @@
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/bin/Debug/netcoreapp1.1/bank_accounts.deps.json
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/bin/Debug/netcoreapp1.1/bank_accounts.runtimeconfig.json
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/bin/Debug/netcoreapp1.1/bank_accounts.runtimeconfig.dev.json
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/bin/Debug/netcoreapp1.1/bank_accounts.dll
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/bin/Debug/netcoreapp1.1/bank_accounts.pdb
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.csprojAssemblyReference.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.csproj.CoreCompileInputs.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.AssemblyInfoInputs.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.AssemblyInfo.cs
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.dll
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/bank_accounts/bank_accounts/obj/Debug/netcoreapp1.1/bank_accounts.pdb
