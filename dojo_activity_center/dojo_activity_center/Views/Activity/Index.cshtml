@@ -1,0 +1,68 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+@model dojo_activity_center.Models.DashboardModels
+@using dojo_activity_center.Models
+@using System.Linq
+
+<div class="header">
+    <h1>Dojo Activity Center</h1>
+    <h5>Welcome @Model.User.FirstName @Model.User.LastName</h5>
+    <a id="logout" href="Logout">Log Off</a>
+</div>
+@if (ViewBag.Error == null)
+{
+    @TempData["error"]
+}
+<table class="table">
+    <tr>
+        <td><h5>Activity</h5></td>
+        <td><h5>Date and Time</h5></td>
+        <td><h5>Duration</h5></td>
+        <td><h5>Event Coordinator</h5></td>
+        <td><h5>Number of Participants</h5></td>
+        <td><h5>Actions</h5></td>
+    </tr>
+    @foreach (var activity in Model.AllActivities)
+    {
+        <tr>
+            <td><a href="ActivityDetails/@activity.ActivityId">@activity.Title</a></td>
+            <td>@activity.Date.ToString("MM/dd") @@ @activity.Time</td>
+            @if(activity.Duration <= 60)
+            {
+                <td>@activity.Duration Minute(s)</td>
+            }
+            else if(activity.Duration <= 1440)
+            {
+                int duration = activity.Duration/60;
+                <td>@duration Hour(s)</td>
+            }
+            else
+            {
+                int duration = activity.Duration/1440;
+                <td>@duration Day(s)</td>
+            }
+            @{
+                User theUser = (Model.AllUsers.Where(u => u.UserId == activity.UserId)).SingleOrDefault();
+                <td>@theUser.FirstName</td>
+            }
+            <td>@activity.Participants.Count</td>
+            @if(Model.User.UserId == activity.UserId)
+            {
+                <td><a href="Delete/@activity.ActivityId">Delete</a></td>
+            }
+            else
+            {
+                if(activity.Participants.Where(p => p.UserId == Model.User.UserId).Count() == 0)
+                {
+                    <td><a href="Join/@activity.ActivityId">Join</a></td>
+                }
+                else
+                {
+                    <td><a href="Leave/@activity.ActivityId">Leave</a></td>
+                }
+            }
+        </tr>
+    }
+</table>
+<a href="NewActivity"><button class="btn btn-primary">Add New Activity!</button></a>

@@ -1,0 +1,6 @@
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.csprojAssemblyReference.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.csproj.CoreCompileInputs.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.RazorAssemblyInfo.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.RazorAssemblyInfo.cs
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.AssemblyInfoInputs.cache
+/Users/randonjordan/Documents/CodingDojo/C#/ASP_MVC/dojo_activity_center/dojo_activity_center/obj/Debug/netcoreapp2.1/dojo_activity_center.AssemblyInfo.cs

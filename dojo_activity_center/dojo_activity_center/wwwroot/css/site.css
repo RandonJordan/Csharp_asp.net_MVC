@@ -1,0 +1,29 @@
+.main {
+    width:80%;
+}
+.index-form {
+    display:inline-block;
+    width:38%;
+}
+.h1 {
+    color:red;
+}
+.header{
+    width: 90%;
+}
+.header h1{
+    width: 50%;
+    display: inline-block
+}
+#home{
+    display: inline-block;
+    width: 15%;
+}
+.header h4{
+    display: inline-block;
+    width: 25%;
+}
+#logout{
+    display: inline-block;
+    width: 10%;
+}

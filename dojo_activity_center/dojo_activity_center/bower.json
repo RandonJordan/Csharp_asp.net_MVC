@@ -1,0 +1,8 @@
+{
+  "name": "dojo_activity_center",
+  "private": true,
+  "dependencies": {
+    "bootstrap" : "3.3.6"
+    
+  }
+}

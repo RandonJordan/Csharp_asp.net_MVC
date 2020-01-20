@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - dojo_activity_center</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+            asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .main {
+             width:98%;
+        }
+        .index-form {
+            display:inline-block;
+            width:48%;
+            vertical-align: top;
+            margin-top: 15px;
+        }
+        .h1 {
+            color:red;
+        }
+        .header{
+    width: 90%;
+    margin-bottom: 20px;
+    border-bottom: thick solid black;
+}
+.header h1{
+    width: 50%;
+    display: inline-block
+}
+#home{
+    display: inline-block;
+    width: 15%;
+}
+.header h5{
+    display: inline-block;
+    width: 25%;
+}
+#logout{
+    display: inline-block;
+    width: 10%;
+    margin-left: 14%;
+}
+#newActivityForm{
+    width: 95%;
+}
+#heading{
+    width: 99%;
+    margin-bottom: 30px;
+}
+#heading h2{
+    display: inline-block;
+}
+#heading button{
+    display: inline-block;
+    margin-left: 60%;
+}
+.theSections{
+    margin-bottom: 30px;
+}
+#theDescription{
+    margin-left: 20px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+        
+        
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

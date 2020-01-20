@@ -1,0 +1,15 @@
+@model dojo_activity_center.Models.LoginUser
+<h2>Login</h2>
+<form asp-action="LoginUser" asp-controller="User" method="post">
+    <span asp-validation-for="LogEmail"></span>
+    <br>
+    <label asp-for="LogEmail"></label>
+    <input asp-for="LogEmail">
+    <br>
+    <span asp-validation-for="LogPassword"></span>
+    <br>
+    <label asp-for="LogPassword"></label>
+    <input asp-for="LogPassword"> 
+    <br>
+    <input type="submit" class="button-primary" value="Login">
+</form>
