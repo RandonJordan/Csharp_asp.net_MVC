@@ -1,0 +1,31 @@
+﻿@using FormSubmission.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model FormSubmission.Models.User
+
+
+
+<h3>Enter your information</h3>
+<form action="/" method="post">
+    <div asp-validation-summary="All"></div>
+    <p>
+        <label asp-for="FirstName">First Name</label>
+        <input type="text" asp-for="FirstName" />
+    </p>
+    <p>
+        <label asp-for="LastName">Last Name</label>
+        <input type="text" asp-for="LastName" />
+    </p>
+    <p>
+        <label asp-for="Age">Age</label>
+        <input type="text" asp-for="Age" />
+    </p>
+    <p>
+        <label asp-for="Email">Email Address</label>
+        <input type="text" asp-for="Email" />
+    </p>
+    <p>
+        <label asp-for="Password">Password</label>
+        <input type="text" asp-for="Password" />
+    </p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
